@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  naming-server:
+    container_name: naming-server
+    image: completed0728/naming-server:1.0
+    ports:
+      - "8761:8761"
+    networks:
+      my-network:
+networks:
+  my-network:
+    external: true
+    name: benefits-network

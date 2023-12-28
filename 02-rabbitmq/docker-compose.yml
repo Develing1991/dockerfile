@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:management
+    ports:
+      - "5672:5672" # rabbitmq amqp port
+      - "15672:15672" # ui manage port
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin123
+    networks:
+      my-network:
+
+networks:
+  my-network:
+    external: true
+    name: benefits-network

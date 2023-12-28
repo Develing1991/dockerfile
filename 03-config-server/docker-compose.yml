@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  config-server:
+    container_name: config-server
+    image: completed0728/config-server:1.0
+    ports:
+      - "8888:8888"
+    environment:
+      spring.rabbitmq.host: rabbitmq
+      spring.profiles.active: default
+    volumes:
+      - /Users/suhanlee/Desktop/msa-project/rsakey/client.jks:/client.jks
+    networks:
+      my-network:
+networks:
+  my-network:
+    external: true
+    name: benefits-network

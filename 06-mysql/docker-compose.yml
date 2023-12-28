@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  mysql:
+    image: mysql:8.0.33
+    platform: linux/amd64
+    restart: always
+    command:
+      - --lower_case_table_names=1
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=msa
+      - MYSQL_ROOT_PASSWORD=root1234!!
+      - TZ=Asia/Seoul
+    volumes:
+      - /Users/suhanlee/Desktop/msa-project/mysql/database:/var/lib/mysql
+    networks:
+      my-network:
+networks:
+  my-network:
+    external: true
+    name: benefits-network
