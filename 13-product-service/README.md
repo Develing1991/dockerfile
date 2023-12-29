@@ -10,6 +10,7 @@
 - benefits-config/product-service.yml 파일 수정
 - mysql은 환경변수로 실행할 것이기 때문에 변경 해주지 않아도 됨
 - docker network inspect benefits-network 명령으로 gateway-service ip 확인 후 변경
+- 이미지의 5번은 무시 gateway ip 50번 고정
 
 ![](https://velog.velcdn.com/images/develing1991/post/d68e1b17-b1e1-4b81-b420-e4887dd49ea1/image.png)
 
