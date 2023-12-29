@@ -11,6 +11,7 @@ services:
       eureka.client.serviceUrl.defaultZone: http://naming-server:8761/eureka
     networks:
       my-network:
+        ipv4_address: 172.18.0.50
 networks:
   my-network:
     external: true
