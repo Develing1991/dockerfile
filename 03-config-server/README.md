@@ -47,8 +47,8 @@ docker build -t completed0728/config-server:1.0 .
 
 ### 04. 실행 택1) docker run
 
-- 볼륨 옵션: 내 로컬 client.jks공개키
-- 환경변수 네이밍 rabbitmq
+- 볼륨 옵션: 내 로컬 client.jks공개키 마운트
+- 환경변수 네임리졸루션 rabbitmq
 - 환경변수 profile default
 
 ```bash
