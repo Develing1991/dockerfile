@@ -25,7 +25,7 @@ https://superuser.com/questions/1080239/run-powershell-command-from-cmd
 
 config-server가 완전히 실행된 이 후에 config-server 자원을 바라보는 나머지 서비스가 실행되야 모든 서비스가 한 번에 정상 실행 되는데
 
-config-server 의 상태를 체크해도 걔속.. unhealty... 흠..
+<del>config-server 의 상태를 체크해도 걔속.. unhealty... 음..</del>
 
 그래서 일단 편법으로 rabbitmq healthcheck는 성공 하니깐..
 config-server는 healthcheck 없이 그냥 바로 실행 시키고
@@ -34,7 +34,7 @@ rabbitmq의 healthcheck start_period를 약 30초간 주고 시간을 벌음 (�
 
 gateway-service를 rabbitmq healthcheck 확인을 의존 시킴 (즉 30초 뒤에 rabbitmq healthcheck -> 확인 되면 gateway-service 실행)
 
-나머지 서비스들은 gateway-service를 의존 시키고.. ㅋㅋ
+나머지 서비스들은 gateway-service를 의존 시키고..
 
 <br><br>
 
