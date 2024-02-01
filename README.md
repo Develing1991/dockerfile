@@ -23,6 +23,8 @@ https://devlifetestcase.tistory.com/88
 
 https://superuser.com/questions/1080239/run-powershell-command-from-cmd
 
+### 해결 과제
+
 config-server가 완전히 실행된 이 후에 config-server 자원을 바라보는 나머지 서비스가 실행되야 모든 서비스가 한 번에 정상 실행 되는데
 
 <del>config-server 의 상태를 체크해도 걔속.. unhealty... 음..</del>
